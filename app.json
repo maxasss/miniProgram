@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/index",
+    "pages/cart/index",
+    "pages/my/index",
+    "pages/search/index",
+    "pages/product_detail/index",
+    "pages/pay/index",
+    "pages/order/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "锦绣中华",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#000000",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icons/_home.png",
+      "selectedIconPath": "icons/home.png"
+    },{
+      "pagePath": "pages/category/index",
+      "text": "民俗资讯",
+      "iconPath": "icons/_news.png",
+      "selectedIconPath": "icons/news.png"
+    },{
+      "pagePath": "pages/cart/index",
+      "text": "文化体验",
+      "iconPath": "icons/_activity.png",
+      "selectedIconPath": "icons/activity.png"
+    },{
+      "pagePath": "pages/my/index",
+      "text": "我的",
+      "iconPath": "icons/_my.png",
+      "selectedIconPath": "icons/my.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+
+
+  "requiredPrivateInfos": [
+    "getLocation", 
+    "chooseLocation", 
+    "chooseAddress"
+  ] 
+  
+}
