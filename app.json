@@ -1,13 +1,10 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/category/index",
-    "pages/cart/index",
+    "pages/news/index",
+    "pages/activity/index",
     "pages/my/index",
-    "pages/search/index",
-    "pages/product_detail/index",
-    "pages/pay/index",
-    "pages/order/index"
+    "pages/create/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,23 +21,23 @@
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页",
-      "iconPath": "icons/_home.png",
-      "selectedIconPath": "icons/home.png"
+      "iconPath": "./assest/icons/_home.png",
+      "selectedIconPath": "./assest/icons/home.png"
     },{
-      "pagePath": "pages/category/index",
+      "pagePath": "pages/news/index",
       "text": "民俗资讯",
-      "iconPath": "icons/_news.png",
-      "selectedIconPath": "icons/news.png"
+      "iconPath": "./assest/icons/_news.png",
+      "selectedIconPath": "./assest/icons/news.png"
     },{
-      "pagePath": "pages/cart/index",
+      "pagePath": "pages/activity/index",
       "text": "文化体验",
-      "iconPath": "icons/_activity.png",
-      "selectedIconPath": "icons/activity.png"
+      "iconPath": "./assest/icons/_activity.png",
+      "selectedIconPath": "./assest/icons/activity.png"
     },{
       "pagePath": "pages/my/index",
       "text": "我的",
-      "iconPath": "icons/_my.png",
-      "selectedIconPath": "icons/my.png"
+      "iconPath": "./assest/icons/_my.png",
+      "selectedIconPath": "./assest/icons/my.png"
     }]
   },
   "style": "v2",

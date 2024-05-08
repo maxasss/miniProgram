@@ -1,18 +1,18 @@
 {
   "setting": {
-    "compileHotReLoad": true
+    "compileHotReLoad": false
   },
   "condition": {
     "miniprogram": {
       "list": [
         {
-          "name": "商品分类",
-          "pathName": "pages/category/index",
+          "name": "民俗资讯",
+          "pathName": "pages/news/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "商品详情页面",
+          "name": "文化体验",
           "pathName": "pages/product_detail/index",
           "query": "id=14",
           "scene": null
@@ -57,5 +57,5 @@
     }
   },
   "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
-  "projectname": "mail"
+  "projectname": "锦绣中华"
 }

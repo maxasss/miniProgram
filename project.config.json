@@ -37,11 +37,11 @@
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true,
-    "condition": false
+    "condition": false,
+    "ignoreUploadUnusedFiles": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.25.3",
-  "appid": "touristappid",
   "projectname": "java1234-mall-v1",
   "condition": {
     "search": {

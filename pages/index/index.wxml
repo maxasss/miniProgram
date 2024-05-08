@@ -1,5 +1,5 @@
 <view >
-	
+<!-- <menu></menu>	 -->
 <!-- 图片+工具栏 开始-->
 <view class="index_box1">
     <!-- 首页背景图 开始 -->
@@ -11,27 +11,27 @@
     <!-- 首页工具栏 开始 -->  
 	<view class="user_menu">
 			<view class="orders_content">
-			  <navigator url="">
+			  <navigator url="../tuteng/index">
 				<view class="iconfont icon-tuteng">
-					<image class="orders_icon" src="../../assest/icon/icon_tuteng.png"></image>
+					<image class="orders_icon" src="../../assest/icon/_tuteng.png"></image>
 				</view>
-				<view class="order_name">民族图腾2</view>
+				<view class="order_name">民族图腾</view>
 			  </navigator>
-			  <navigator url="">
+			  <navigator url="../create/index">
 				<view class="iconfont icon-chuangzuo">
-					<image class="orders_icon" src="../../assest/icon/icon_tuteng.png"></image>
+					<image class="orders_icon" src="../../assest/icon/_create.png"></image>
 				</view>
 				<view class="order_name">服饰创作</view>
 			  </navigator>
 			  <navigator url="">
 				<view class="iconfont icon-zuopin">
-					<image class="orders_icon" src="../../assest/icon/icon_tuteng.png"></image>
+					<image class="orders_icon" src="../../assest/icon/_works.png"></image>
 				</view>
 				<view class="order_name">我的作品</view>
 			  </navigator>
 			  <navigator url="">
 				<view class="iconfont icon-tuijian">
-					<image class="orders_icon" src="../../assest/icon/icon_tuteng.png"></image>
+					<image class="orders_icon" src="../../assest/icon/_clothes.png"></image>
 				</view>
 				<view class="order_name">服饰推荐</view>
 			  </navigator>
