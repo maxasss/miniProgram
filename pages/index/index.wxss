@@ -1,0 +1,181 @@
+/* index图片 manu st */
+.index_box1{
+	position: relative;
+}
+.index_img {
+	height:10rem;
+}
+.user_menu {
+	position: absolute;
+	top: 8.5rem;
+	left:3%;
+	right:3%;
+   background-color: #e1edf2;
+   border-radius: 0.625rem;
+}
+
+/* .user_menu .orders_warp {
+  margin: 15rpx;
+  background-color: #5dd4ff;
+} */
+.user_menu  .orders_content {
+  padding: 20rpx;
+  display: flex;
+  text-align: center;
+}
+/* menu box */
+.user_menu  .orders_content navigator {
+  padding: 15rpx ;
+  flex: 1;
+  text-align: center;
+}
+/* menu文字 */
+.user_menu  .orders_content navigator .iconfont {
+  font-size: 24px;
+}
+/* menu按钮 */
+.user_menu  .orders_content navigator image{
+	height: 1.5rem;
+	width: 1.5rem;
+}
+/* 通知栏 */
+.infor{
+	position: absolute;
+	top: 13.75rem;
+	left:3%;
+	right:3%;
+	height:2rem;
+   background-color: #e1edf2;
+   border-radius: 0.625rem;
+}
+
+
+/* index图片 menu ed */
+
+
+/* 轮播图 st*/
+.index_swiper swiper {
+	border-radius: 0.625rem;
+	overflow:hidden;
+	position: absolute;
+	
+	top: 16.30rem;
+	left:3%;
+	right:3%;
+	width: 706rpx;
+	height: 330rpx;
+}
+.swiper-image {
+	       height: 80%;
+	        width: 100%;
+ }
+/* 轮播图 ed*/
+
+/* DIY st*/
+	 .DIY_box{
+		display: flex;
+		flex-direction: row;
+		position: absolute;
+		top: 29.70rem;
+		left:3%;
+		right:3%;
+		height: 7.5rem;
+		background-color: #e1edf2;
+		border-radius: 0.625rem;
+		/* justify-content: center; */
+		align-items: center;
+	 }   
+	 .sub_box{
+		margin: 20rpx;
+		flex-wrap:nowrap; 
+		/* margin-left: 0.625rem; */
+		height: 70%;
+		width: 30%;
+	 	background-color:  #ffffff;
+		border-radius: 0.625rem;
+	 }
+/* DIY ed */
+
+/* 热门推荐 st */
+.recomend_box{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	overflow-y: scroll;
+	
+	top: 42rem;
+	left:3%;
+	right:3%;
+	height: 20rem;
+	background-color: #e1edf2;
+	border-radius: 0.625rem;
+	align-items: center;
+}
+ .sub_box1{
+		margin: 20rpx;
+		flex-wrap:nowrap; 
+		height: 30%;
+		width: 95%;
+	 	background-color:  #ffffff;
+		border-radius: 0.625rem;
+	 }
+/* 热门推荐 ed */
+
+
+
+/* DIY-text st */
+.text1{
+	margin-top: 16rem;
+	text-align: center;
+}
+/* DIY-text ed */
+.text2{
+	text-align: center;
+	margin-top: 11rem;
+}
+/* recomend-text st */
+
+
+/* recomend-text ed */
+.index_bigType {
+  padding-top: 0rpx;
+  width: 750rpx;
+  height: 375rpx;
+  background-color: #75dd94;
+}
+.index_bigType .bigTypeRow {
+  display: flex;
+}
+.index_bigType .bigTypeRow navigator {
+  flex: 1;
+}
+.index_bigType .bigTypeRow navigator image {
+  width: 150rpx;
+}
+.product_title {
+  font-size: 32rpx;
+  background-color: #aeceff;
+  font-weight: 600;
+  padding: 20rpx;
+  color: #100d3b;
+}
+.index_hot_product .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.index_hot_product .list .product_detail {
+  margin: 10rpx;
+  width: 46%;
+  text-align: center;
+}
+.index_hot_product .list .product_detail navigator image {
+  background-color: #bb3737;
+}
+.index_hot_product .list .product_detail navigator .product_name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.index_hot_product .list .product_detail navigator .product_price {
+  color: #db2424;
+}

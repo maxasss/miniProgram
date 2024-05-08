@@ -1,0 +1,30 @@
+<view class="cates">
+<!--  搜索框 start
+  <SearchBar>44</SearchBar>
+  <!-- 搜索框 end --> 
+  <!-- 民俗资讯 st -->
+<view class="fa">
+	<view></view>
+  	<view class="box">
+		<view class="title" id="">
+			资讯快报
+		</view>
+  		<view class="sub_box1" id="first">
+  			<image src=""></image>
+  		</view>
+		<view class="sub_box1">
+			<image src=""></image>
+		</view>
+		<view class="sub_box1">
+			<image src=""></image>
+		</view>
+  		<view class="sub_box1">
+  			<image src=""></image>
+  		</view>
+  		<view class="sub_box1">
+  			<image src=""></image>
+  		</view>
+  	</view>
+	  <!-- 民俗资讯 ed -->
+	  </view>
+</view>
