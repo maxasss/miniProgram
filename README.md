@@ -5,5 +5,5 @@
 #### 软件架构
 微信小程序原生js实现
 #### UI
-https://js.design/f/NsghAz?p=ri_DK8dbBt&mode=design
+https://js.design/f/aH7jq5?p=ri_DK8dbBt&mode=design
 

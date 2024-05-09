@@ -1,23 +1,25 @@
 /* index图片 manu st */
 .index_box1{
-	position: relative;
+    position: relative;
+}
+.imgbox{
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 }
 .index_img {
-	height:10rem;
+ margin-top: -5px;
 }
 .user_menu {
-	position: absolute;
-	top: 8.5rem;
-	left:3%;
-	right:3%;
-   background-color: #e1edf2;
+    position: absolute;
+	top: 20%;
+	left:5%;
+    right:5%;
+    height: 12%;
+   background-color:  #FAF3E6;
    border-radius: 0.625rem;
 }
-
-/* .user_menu .orders_warp {
-  margin: 15rpx;
-  background-color: #5dd4ff;
-} */
 .user_menu  .orders_content {
   padding: 20rpx;
   display: flex;
@@ -35,57 +37,85 @@
 }
 /* menu按钮 */
 .user_menu  .orders_content navigator image{
-	height: 1.5rem;
-	width: 1.5rem;
+	height: 2rem;
+    width: 2rem;
+    margin-bottom: 10px;
 }
 /* 通知栏 */
 .infor{
 	position: absolute;
-	top: 13.75rem;
-	left:3%;
-	right:3%;
-	height:2rem;
-   background-color: #e1edf2;
+	top: 34%;
+	left:5%;
+	right:5%;
+	height:4%;
+   background-color:  #FAF3E6;
    border-radius: 0.625rem;
+   
+   display: flex;
+   flex-direction: row;
 }
 
+#info-icon{
+	margin-right: 0.0625rem;
+	font-size :10px;
+	width: 10%;
+	background-image:-webkit-linear-gradient(bottom,rgb(94,51,25,40),rgb(8,66,82,0));
+} 
+.info-text {
+	display:inline;
+	font-size :10px;
 
-/* index图片 menu ed */
-
-
+}
 /* 轮播图 st*/
 .index_swiper swiper {
 	border-radius: 0.625rem;
 	overflow:hidden;
 	position: absolute;
 	
-	top: 16.30rem;
-	left:3%;
-	right:3%;
-	width: 706rpx;
-	height: 330rpx;
+	top: 40%;
+	left:5%;
+	width: 90%;
+	height: 25%;
 }
 .swiper-image {
-	       height: 80%;
+	       height: 100%;
 	        width: 100%;
  }
 /* 轮播图 ed*/
 
 /* DIY st*/
-	 .DIY_box{
+    .text1{
+        margin-top:85%;  
+        text-align: center;
+    }
+	.Eg{
+		background-image:-webkit-linear-gradient(top,rgb(94,51,25,40),rgb(8,66,82,0)); 
+		-webkit-background-clip:text; 
+	    -webkit-text-fill-color:transparent; 
+		font-size :30px;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-weight: 700;
+	}
+	.Ch{
+		color: #5E3319;
+		margin-top: -15px;
+		font-weight: 600;
+	}
+	
+ .DIY_box{
 		display: flex;
 		flex-direction: row;
 		position: absolute;
-		top: 29.70rem;
-		left:3%;
-		right:3%;
-		height: 7.5rem;
-		background-color: #e1edf2;
+		top: 76%;
+		left:5%;
+		right:5%;
+		height: 15%;
+		background-color: #FAF3E6;
 		border-radius: 0.625rem;
 		/* justify-content: center; */
 		align-items: center;
-	 }   
-	 .sub_box{
+ }   
+ .sub_box{
 		margin: 20rpx;
 		flex-wrap:nowrap; 
 		/* margin-left: 0.625rem; */
@@ -93,7 +123,7 @@
 		width: 30%;
 	 	background-color:  #ffffff;
 		border-radius: 0.625rem;
-	 }
+     }
 /* DIY ed */
 
 /* 热门推荐 st */
@@ -102,15 +132,16 @@
 	flex-direction: column;
 	position: absolute;
 	overflow-y: scroll;
-	
-	top: 42rem;
-	left:3%;
-	right:3%;
+	padding-top: 5%;
+	top: 102%;
+	left:5%;
+	right:5%;
 	height: 20rem;
-	background-color: #e1edf2;
+	background-color:  #FAF3E6;
 	border-radius: 0.625rem;
 	align-items: center;
 }
+
  .sub_box1{
 		margin: 20rpx;
 		flex-wrap:nowrap; 
@@ -118,64 +149,12 @@
 		width: 95%;
 	 	background-color:  #ffffff;
 		border-radius: 0.625rem;
-	 }
+     }
+     .text2{
+        text-align: center;
+        margin-top: 11rem;
+    }
 /* 热门推荐 ed */
 
 
 
-/* DIY-text st */
-.text1{
-	margin-top: 16rem;
-	text-align: center;
-}
-/* DIY-text ed */
-.text2{
-	text-align: center;
-	margin-top: 11rem;
-}
-/* recomend-text st */
-
-
-/* recomend-text ed */
-.index_bigType {
-  padding-top: 0rpx;
-  width: 750rpx;
-  height: 375rpx;
-  background-color: #75dd94;
-}
-.index_bigType .bigTypeRow {
-  display: flex;
-}
-.index_bigType .bigTypeRow navigator {
-  flex: 1;
-}
-.index_bigType .bigTypeRow navigator image {
-  width: 150rpx;
-}
-.product_title {
-  font-size: 32rpx;
-  background-color: #aeceff;
-  font-weight: 600;
-  padding: 20rpx;
-  color: #100d3b;
-}
-.index_hot_product .list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.index_hot_product .list .product_detail {
-  margin: 10rpx;
-  width: 46%;
-  text-align: center;
-}
-.index_hot_product .list .product_detail navigator image {
-  background-color: #bb3737;
-}
-.index_hot_product .list .product_detail navigator .product_name {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.index_hot_product .list .product_detail navigator .product_price {
-  color: #db2424;
-}

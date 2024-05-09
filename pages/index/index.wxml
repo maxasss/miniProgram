@@ -1,10 +1,8 @@
 <view >
-<!-- <menu></menu>	 -->
-<!-- 图片+工具栏 开始-->
 <view class="index_box1">
     <!-- 首页背景图 开始 -->
-    <view >
-        <image src="../../assest/image/R-C .png" class="index_img"></image>
+    <view class="imgbox">
+        <image src="../../assest/image/R-C .png" class="index_img"  mode="aspectFit"></image>
     </view>
     <!-- 首页背景图 结束 -->
 
@@ -38,16 +36,16 @@
 			</view>
 	</view>
 	<!-- 首页工具栏 结束 -->
-</view>
-<!-- 图片+工具栏 结束 -->
 
  <!-- 通知栏 开始 -->  
-	<view class="infor">
-			<view class="orders_content">
-			  <view>通知</view>
-			  <navigator url="">
-				服饰创作功能上线了，快来设计专属于你的民族服饰吧！
-			  </navigator>
+ <view class="infor">
+			<view class="info-text">
+				<view class="info-text" id="info-icon">通知</view>
+				<view class="info-text">
+					  <navigator url="">
+						服饰创作功能上线了，快来设计专属于你的民族服饰吧！
+					  </navigator>
+				</view>
 			</view>
 	</view>
 <!-- 通知栏 结束 -->
@@ -57,49 +55,17 @@
 	<swiper indicator-dots autoplay circular>
 	  <swiper-item>
 		<navigator url="">
-			<image src="../../assest/image/R-C .png"></image>
+			<image src="../../assest/image/swiper/A.png"></image>
 		</navigator>
 	  </swiper-item>
 	  <swiper-item>
 		<navigator url="">
-			<image src="../../assest/image/R-C .png"></image>
-		</navigator>
-	  </swiper-item>
-	  <swiper-item>
-		<navigator url="">
-			<image src="../../assest/image/R-C .png"></image>
+			<image src="../../assest/image/swiper/B.png"></image>
 		</navigator>
 	  </swiper-item>
 	</swiper>
-<!-- </swiper>
- 
-
-     <!-- 1 swiper标签存在默认的宽度和高度
-        100% * 150px 
-      2 image标签也存在默认的宽度和高度
-        320px * 240px 
-      3 设计图片和轮播图
-        1 先看一下原图的宽高  600 * 300
-        2 让图片的高度自适应 宽度 等于100%
-        3 让swiper标签的高度 变成和图片的高一样即可 
-      4 图片标签
-        mode属性 渲染模式
-          widthFix  让图片的标签宽高 和 图片标签的内容的宽高都等比例的发生变化 
-    
-    <swiper autoplay indicator-dots circular>
-      <swiper-item
-      wx:for="{{swiperList}}"
-      wx:for-item="swiper"
-      wx:key="id"
-      >
-        <navigator url="/pages/product_detail/index?id={{swiper.id}}">
-          <image mode="widthFix" src="{{baseUrl+'assest/image/swiper/'+swiper.swiperPic}}"></image>
-        </navigator>
-      </swiper-item>
-    
-    </swiper> -->
   </view>
-  <!-- 轮播图 结束 -->
+<!-- 轮播图 结束 -->
 	
 	<!-- DIY商品展示 开始 -->
 	<view class="text1" >
@@ -150,5 +116,7 @@
   		</view>
   	</view>
   <!--热门推荐 结束 -->
+
+</view>
 
 </view>

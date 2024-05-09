@@ -9,7 +9,7 @@ page,view,text,swiper,swiper-item,image,navigator{
   box-sizing: border-box;
 }
 page{
-    background-color:#C3D9E3;
+    background-color:#FFE8BD;
 }
 /* 全局变量定义 颜色、字体大小等 
    rpx（responsive pixel）: 可以根据屏幕宽度进行自适应。规定屏幕宽为750rpx。
