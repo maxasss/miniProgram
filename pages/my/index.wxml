@@ -2,7 +2,9 @@
  <!-- 用户背景信息开始 -->
   <view class="user_info_bg">
     <view class="user_info_warp">
-        <image src="../../assest/image/R-C .png"></image>
+		<view id="touxiang">
+			<image id="bc" src="../../assest/image/R-D.png"></image>
+		</view>
         <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
         <view class="user_name">{{userInfo.nickName}}</view>
     </view>

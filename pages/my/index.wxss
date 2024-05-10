@@ -1,10 +1,33 @@
 page {
-  background-color: rgba(236, 236, 229, 0.898);
+  background-color: #FAF3E6;
+}
+#bc{
+	width: 100%;
+}
+#touxiang{
+		margin-top:-50px;
+        width: 100rpx;
+        height: 100rpx;
+        border-radius: 50%;
+		border-color: #A3CFC8;
+		border-width: 2px;
+		padding: 2px;
+		background-color: #ffff;
+}
+.user_icon{
+		margin-top:-50px;
+        width: 100rpx;
+        height: 100rpx;
+        border-radius: 50%;
+		border-color: #A3CFC8;
+		border-width: 2px;
+		padding: 2px;
+		background-color: #ffff;
 }
 .user_info .user_info_bg {
   position: relative;
-  height: 40vh;
-  background-color: var(--themeColor);
+  height: ;
+  background-color: transparent;
 }
 .user_info .user_info_bg .user_info_warp {
   position: relative;
