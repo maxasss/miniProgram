@@ -1,0 +1,35 @@
+<!--pages/my_contact/my_contact.wxml-->
+<!--二维码区域-->
+<view id="qrCodeView">
+    <image src="https://pic4.zhimg.com/v2-636fc655981da7044e42bc9081c87846_r.jpg"></image>
+    <text>微信扫一扫添加开发者微信</text>
+</view>
+
+<!--开发者信息区域-->
+<view id="developerView">
+    <view class="developerItemView">
+        <view>开发者姓名</view>
+        <view>xxx</view>
+    </view>
+    <view class="developerItemView">
+        <view>开发者学校</view>
+        <view>姚专</view>
+    </view>
+    <view class="developerItemView">
+        <view>开发者电话</view>
+        <view>1008611</view>
+    </view>
+    <view class="developerItemView">
+        <view>开发者微信号</view>
+        <view>wx.request</view>
+    </view>
+    <view class="developerItemView">
+        <view>开发者邮箱</view>
+        <view>1008611@wx.com</view>
+    </view>
+    <view class="developerItemView">
+        <view>版本号</view>
+        <view>1.0.0</view>
+    </view>
+</view>
+

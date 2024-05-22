@@ -1,63 +1,50 @@
-<view class="user_info">
- <!-- 用户背景信息开始 -->
-  <view class="user_info_bg">
-    <view class="user_info_warp">
-		<view id="touxiang">
-			<image id="bc" src="../../assest/image/R-D.png"></image>
-		</view>
-        <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
-        <view class="user_name">{{userInfo.nickName}}</view>
+<view class="container">
+  <view class="header">
+    <image class="background-image" src="../../assest/image/image_my/head.png" />
+  </view>
+  
+  <view class="avatar-wrapper">
+    <view class="avatar"></view>
+    <text class="username">小鱼_123</text>
+  </view>
+  
+  <view class="menu">
+    <view class="menu-item">
+      <image src="../../assest/image/image_my/_tuteng.png" class="menu-icon" />
+      <text class="menu-text">我的预约</text>
+    </view>
+    <view class="menu-item">
+      <image src="../../assest/image/image_my/_create.png" class="menu-icon" />
+      <text class="menu-text">我的创作</text>
+    </view>
+    <view class="menu-item">
+      <image src="../../assest/image/image_my/_works.png" class="menu-icon" />
+      <text class="menu-text">我的收藏</text>
+    </view>
+    <view class="menu-item">
+      <image src="../../assest/image/image_my/_clothes.png" class="menu-icon" />
+      <text class="menu-text">我的订阅</text>
     </view>
   </view>
-  <!-- 用户背景信息结束 -->
 
-  <!-- 用户操作菜单开始 -->
-  <view class="user_menu">
-    <!-- 订单管理开始 -->
-    <view class="orders_warp">
-      <view class="orders_title">我的订单</view>
-      <view class="orders_content">
-        <navigator url="/pages/order/index?type=1">
-          <view class="iconfont icon-daifukuan"></view>
-          <view class="order_name">待付款</view>
-        </navigator>
-        <navigator url="/pages/order/index?type=2">
-          <view class="iconfont icon-daishouhuo"></view>
-          <view class="order_name">待收货</view>
-        </navigator>
-        <navigator url="/pages/order/index?type=3">
-          <view class="iconfont icon-tuikuan"></view>
-          <view class="order_name">退款/退货</view>
-        </navigator>
-        <navigator url="/pages/order/index?type=0">
-          <view class="iconfont icon-dingdan"></view>
-          <view class="order_name">全部订单</view>
-        </navigator>
+  <view class="list">
+    <navigator url="/pages/my_info/my_info">
+      <view class="list-item">
+        <text>个人信息</text>
       </view>
+    </navigator>
+    <navigator url="/pages/my_feedback/my_feedback">
+      <view class="list-item">
+        <text>意见反馈</text>
+      </view>
+    </navigator>
+    <navigator url="/pages/my_contact/my_contact">
+      <view class="list-item">
+        <text>联系我们</text>
+      </view>
+    </navigator>
+    <view class="list-item" bindtap="logout">
+      <text>退出登录</text>
     </view>
-    <!-- 订单管理结束 -->
-
-    <!-- 收货地址开始 -->
-    <view class="address_warp" bindtap="handleEditAddress">
-      🌎收货地址管理
-    </view>
-    <!-- 收货地址结束 -->
-
-    <!-- 应用相关信息开始 -->
-    <view class="app_info_warp">
-      <view class="app_info_item app_info_contact">
-        <text>📞联系客服</text>
-        <text>400-699-12345</text>
-      </view>
-      <view class="app_info_item">
-        <button  open-type="feedback" class="feedback">💢意见反馈</button>
-      </view>
-      <view class="app_info_item">
-        🪡关于我们
-      </view>
-    </view>
-    <!-- 应用相关信息开始 -->
-
   </view>
-  <!-- 用户操作菜单结束 -->
 </view>

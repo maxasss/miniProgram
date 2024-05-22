@@ -1,4 +1,6 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "文化体验"
+  "navigationBarTitleText": "文化体验",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
 }

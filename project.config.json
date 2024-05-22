@@ -37,7 +37,7 @@
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true,
-    "condition": false,
+    "condition": true,
     "ignoreUploadUnusedFiles": true
   },
   "compileType": "miniprogram",
@@ -66,5 +66,7 @@
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  }
+  },
+  "appid": "touristappid",
+  "simulatorPluginLibVersion": {}
 }

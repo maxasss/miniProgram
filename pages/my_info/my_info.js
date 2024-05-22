@@ -1,4 +1,4 @@
-// pages/search/index.js
+// pages/my_info/my_info.js
 Page({
 
   /**

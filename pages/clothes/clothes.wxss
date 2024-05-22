@@ -1,0 +1,44 @@
+/* pages/clothes/clothes.wxss */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FDEACC;
+    min-height: 100vh;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+    flex-grow: 1;
+	width:90%;
+  }
+  
+  .grid-item {
+    width: 90%;
+    margin: 20px;
+    background-color: #FAF3E6;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Add padding at the top for text */
+   padding-bottom: 20px; /* Add padding at the top for text */
+  }
+  .text-container{
+	  text-indent: 2em; /* 调整缩进大小 */
+	  width: 90%;
+	  margin: auto;
+  }
+  .item-image{
+	width: 90%; /* 设置图片宽度为 90% */
+	height: 700px;
+	display: block; /* 将图片设为块级元素 */
+	margin: 5px auto; /* 水平居中 */
+	  
+  }
+  

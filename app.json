@@ -4,7 +4,12 @@
     "pages/news/index",
     "pages/activity/index",
     "pages/my/index",
-    "pages/create/index"
+    "pages/tuteng/tuteng",
+    "pages/create/index",
+    "pages/clothes/clothes",
+    "pages/my_info/my_info",
+    "pages/my_feedback/my_feedback",
+    "pages/my_contact/my_contact"
   ],
   "window": {
     "backgroundTextStyle": "light",

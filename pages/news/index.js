@@ -1,161 +1,109 @@
-// 导入request请求工具方法
-import {getBaseUrl, requestUtil} from "../../utils/requestUtil.js";
-import regeneratorRuntime from '../../lib/runtime/runtime';
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-  // 左侧的菜单数据
-  leftMenuList:[],
-  // 右侧的商品数据
-  rightContent:[],
-  baseUrl:'',
-  // 被点击的左侧的菜单
-  currentIndex:0,
-  // 右侧内容的滚动条距离顶部的距离
-  scrollTop:0
-  },
-
-  // 接口的返回数据
-  Cates:[],
-
-  // 获取商品大类数据
-  async getCates(){
-    console.log("getCates")
-    const result=await requestUtil({url: "/bigType/findCategories"});
-    const baseUrl=getBaseUrl();
-    console.log("getCates:"+result)
-    this.Cates=result.message;
-
-    // 把接口的数据存入本地缓存
-    wx.setStorageSync('cates', {time:Date.now(),data:this.Cates})
-
-    let leftMenuList=this.Cates.map(v=>v.name);
-    let rightContent=this.Cates[0].smallTypeList;
-    this.setData({
-      leftMenuList,
-      rightContent,
-      baseUrl
-    })
-  },
-
-  // 获取商品大类数据 从首页跳转过来的
-  async getCates2(index){
-    console.log("getCates")
-    const result=await requestUtil({url: "/bigType/findCategories"});
-    const baseUrl=getBaseUrl();
-    console.log("getCates:"+result)
-    this.Cates=result.message;
-
-    // 把接口的数据存入本地缓存
-    wx.setStorageSync('cates', {time:Date.now(),data:this.Cates})
-
-    let leftMenuList=this.Cates.map(v=>v.name);
-    let rightContent=this.Cates[index].smallTypeList;
-    this.setData({
-      leftMenuList,
-      rightContent,
-      baseUrl,
-      currentIndex:index
-    })
-  },
-
-  // 左侧菜单的点击事件
-  handleItemTap(e){
-    let index=e.currentTarget.dataset.index;
-    let rightContent=this.Cates[index].smallTypeList;
-  
-    this.setData({
-      currentIndex:index,
-      rightContent,
-      scrollTop:0
-    })
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    console.log("onload")
-    const Cates=wx.getStorageSync('cates');
-    if(!Cates){
-      this.getCates();
-    }else{
-      if(Date.now()-Cates.time>1000*10){
-        this.getCates();
-      }else{
-        console.log("可以使用旧数据");
-        this.Cates=Cates.data;
-        let leftMenuList=this.Cates.map(v=>v.name);
-        let rightContent=this.Cates[0].smallTypeList;
-        const baseUrl=getBaseUrl();
-        this.setData({
-          leftMenuList,
-          rightContent,
-          baseUrl
+    data: {
+		    loading: false,
+		    apiKey: '22FNbtu1o1frRC3XpI3n0Imef4WPWNX8',
+		    images: [],
+      newsList: [
+        {
+          id: 1,
+          cover: "../../assest/image/image_news/box1.png",
+          title: '有理数|非遗里的山东传统舞蹈',
+          time: '2024年5月2日'
+        },
+        {
+          id: 2,
+          cover: "../../assest/image/image_news/box2.png",
+          title: '文化自信崛起下的“非遗新造”',
+          time: '2024年3月30日'
+        },
+        {
+          id: 3,
+          cover: "../../assest/image/image_news/box3.png",
+          title: '全国首创，就在广州！“不到北京路，不是广州城”',
+          time: '2023年6月12日' 
+        }
+      ]
+    },
+    // 点击卡片跳转到详情页
+    goToDetail: function(event) {
+      const id = event.currentTarget.dataset.id
+      if (id === 1) {
+        wx.navigateTo({
+          url: '../scenic_news_detail1/scenic_news_detail1?id=' + id
+        })
+      } else if (id === 2) {
+        wx.navigateTo({
+          url: '../scenic_news_detail2/scenic_news_detail2?id=' + id
+        })
+      } else if (id === 3) {
+        wx.navigateTo({
+          url: '../scenic_news_detail2/scenic_news_detail2?id=' + id
         })
       }
-    }
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    console.log("onShow")
-
-    const app=getApp();
-    var index=app.globalData.index;
-    console.log("index:"+index)
-    if(index!=-1){
-      this.getCates2(index);
-     
-      // 用完后重置
-      app.globalData.index=-1
-    }
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+    },
+    // 点击第二个卡片跳转到第二个详情页
+    goToDetail2: function(event) {
+      const id = event.currentTarget.dataset.id
+      wx.navigateTo({
+        url: '?id=' + id
+      })
+    },
+  
+    onRefresh:function(){
+      //导航条加载动画
+      wx.showNavigationBarLoading()
+      //loading 提示框
+      wx.showLoading({
+        title: 'Loading...',
+      })
+      console.log("下拉刷新啦");
+      setTimeout(function () {
+        wx.hideLoading();
+        wx.hideNavigationBarLoading();
+        //停止下拉刷新
+        wx.stopPullDownRefresh();
+      }, 2000)
+    },
+    /**
+     * 页面相关事件处理函数--监听用户下拉动作
+     */
+    onPullDownRefresh:function(){
+      this.onRefresh();
+    },
+	
+	 // 获取图片
+	  fetchImages() {
+	    const { apiKey } = this.data;
+		this.setData({ loading: true }); 
+		
+	    wx.request({
+	      url: 'https://sm.ms/home/picture',
+	      method: 'GET',
+	      header: {
+	        'Authorization': apiKey
+	      },
+	      success: (res) => {
+	        if (res.data.success) {
+	          this.setData({
+	            images: res.data.data,
+	            loading: false  // 更新 loading 状态为 false，表示加载完成
+	          });
+	        } else {
+	          wx.showToast({
+	            title: '获取图片失败',
+	            icon: 'none'
+	          });
+	          this.setData({ loading: false });  // 更新 loading 状态为 false，表示加载完成
+	        }
+	      },
+		   fail: () => {
+		          wx.showToast({
+		            title: '请求失败',
+		            icon: 'none'
+		          });
+		          this.setData({ loading: false });  // 更新 loading 状态为 false，表示加载完成
+		        }
+		});
+	}// 获取图片
 })

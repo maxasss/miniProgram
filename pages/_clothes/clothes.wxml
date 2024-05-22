@@ -1,0 +1,29 @@
+<!--pages/clothes/clothes.wxml-->
+<view class="container">
+  <view class="grid">
+    <view class="grid-item">
+      <text class="grid-text">水波纹</text>
+      <image src="../../assest/image/image_clothes/shuibowen.png" class="grid-image"/>
+    </view>
+    <view class="grid-item">
+      <text class="grid-text">云纹</text>
+      <image src="../../assest/image/image_clothes/yunwen.png" class="grid-image"/>
+    </view>
+    <view class="grid-item">
+      <text class="grid-text">龙纹</text>
+      <image src="../../assest/image/image_clothes/longwen.png" class="grid-image"/>
+    </view>
+    <view class="grid-item">
+      <text class="grid-text">凤纹</text>
+      <image src="../../assest/image/image_clothes/fengwen.png" class="grid-image"/>
+    </view>
+    <view class="grid-item">
+      <text class="grid-text">团花纹</text>
+      <image src="../../assest/image/image_clothes/tuanhuawen.png" class="grid-image"/>
+    </view>
+    <view class="grid-item">
+      <text class="grid-text">缠枝纹</text>
+      <image src="../../assest/image/image_clothes/chanhuawen.png" class="grid-image"/>
+    </view>
+  </view>
+</view>

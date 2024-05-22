@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="grid">
+    <view class="grid-item">
+      <text class="grid-text">竹编</text>
+      <image src="../../assest/image/image_tuteng/zhubian.png" class="grid-image"/>
+    </view>
+    <view class="grid-item">
+      <text class="grid-text">刺绣</text>
+      <image src="../../assest/image/image_tuteng/cixiu.png" class="grid-image"/>
+    </view>
+    <view class="grid-item">
+      <text class="grid-text">陶瓷</text>
+      <image src="../../assest/image/image_tuteng/taoci.png" class="grid-image"/>
+    </view>
+    <view class="grid-item">
+      <text class="grid-text">蜡染</text>
+      <image src="../../assest/image/image_tuteng/laran.png" class="grid-image"/>
+    </view>
+    <view class="grid-item">
+      <text class="grid-text">剪纸</text>
+      <image src="../../assest/image/image_tuteng/jianzhi.png" class="grid-image"/>
+    </view>
+    <view class="grid-item">
+      <text class="grid-text">泥塑</text>
+      <image src="../../assest/image/image_tuteng/nisu.png" class="grid-image"/>
+    </view>
+  </view>
+</view>

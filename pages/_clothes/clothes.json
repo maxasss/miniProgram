@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "服饰推荐",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

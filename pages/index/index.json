@@ -1,7 +1,6 @@
 {
   "usingComponents": {
     "SearchBar":"../../components/SearchBar/SearchBar"
-  
   },
   "navigationBarTitleText": "锦绣中华"
 }

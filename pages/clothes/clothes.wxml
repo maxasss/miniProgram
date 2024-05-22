@@ -1,0 +1,13 @@
+<!--pages/clothes/clothes.wxml-->
+<view class="container">
+  <view class="grid">
+    <view class="grid-item">
+      <block wx:for="{{textList}}" wx:key="{{item.id}}">
+        <view class="card" bindtap="goToDetail" data-id="{{item.id}}">
+			<image wx:if="{{index === 2}}" src="../../assest/image/image_clothes/hanfu.jpg" class="item-image"></image>
+			<view class="text-container">{{item.text}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

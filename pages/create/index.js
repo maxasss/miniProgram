@@ -1,5 +1,5 @@
 // 导入request请求工具方法
-import {getBaseUrl, requestUtil} from "../../utils/requestUtil.js";
+// import {getBaseUrl, requestUtil} from "../../utils/requestUtil.js";
 import regeneratorRuntime from '../../lib/runtime/runtime';
 Page({
 
@@ -9,7 +9,7 @@ Page({
   data: {
   // 左侧的菜单数据
   leftMenuList:[],
-  // 右侧的商品数据
+  // 右侧的商品数
   rightContent:[],
   baseUrl:'',
   // 被点击的左侧的菜单
